@@ -1,0 +1,24 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: prjhub_development
+  username: sharat
+  password: Radioactive8
+
+test:
+  <<: *default
+  database: prjhub_test
+  username: sharat
+  password: Radioactive8
+
+
+production:
+  <<: *default
+  database: prjhub_production
+  username: sharat
+  password: Radioactive8
